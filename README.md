@@ -17,11 +17,11 @@ Set permissions to execute scripts:
 ```  
 $ chmod u+x build.sh startup.sh shutdown.sh
 ```
-Firstly, we should build '**api-gateway**' and '**user-microservice**' completely under '**_disk**' folder using build script as follows:
+Basicly, we should build '**api-gateway**' and '**user-microservice**' completely with this build script as follows:
 ```  
 $ ./build.sh   
 ```
-during compile and packaging all integration tests and unit tests pass and then the script move all jars to _dict folder.
+during compiling and packaging, if all integration tests and unit tests pass correctly, and then the script is able to move all jars to '**_disk**' folder.
 
 #### Run Server
 Run server with this script
