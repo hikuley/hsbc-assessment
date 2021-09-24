@@ -1,0 +1,4 @@
+# Intellij IDEA folder should NOT be committed.
+.idea/
+*.iml
+_dist/
