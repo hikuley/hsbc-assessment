@@ -21,10 +21,10 @@ public class UserService {
             user = userRepository.save(user);
             return user;
         } else {
-            Optional<User> employeeOptional = userRepository.findById(user.getId());
+            Optional<User> userOptional = userRepository.findById(user.getId());
 
-            if (employeeOptional.isPresent()) {
-                User newEntity = employeeOptional.get();
+            if (userOptional.isPresent()) {
+                User newEntity = userOptional.get();
 
                 newEntity.setFirstName(user.getFirstName());
                 newEntity.setLastName(user.getLastName());

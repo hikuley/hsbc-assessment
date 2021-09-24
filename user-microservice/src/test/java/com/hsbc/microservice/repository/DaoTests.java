@@ -24,8 +24,8 @@ public class DaoTests {
 
         userRepository.save(user);
 
-        Iterable<User> employees = userRepository.findAll();
-        Assertions.assertThat(employees).extracting(User::getFirstName).containsOnly("Lokesh");
+        Iterable<User> users = userRepository.findAll();
+        Assertions.assertThat(users).extracting(User::getFirstName).containsOnly("Lokesh");
 
         userRepository.deleteAll();
         Assertions.assertThat(userRepository.findAll()).isEmpty();

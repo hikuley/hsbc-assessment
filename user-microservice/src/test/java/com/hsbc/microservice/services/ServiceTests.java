@@ -27,20 +27,20 @@ public class ServiceTests {
     @Test
     public void testFindAllUsers() {
         List<User> list = new ArrayList<>();
-        User empOne = new User("John", "John");
-        User empTwo = new User("Alex", "kolenchiski");
-        User empThree = new User("Steve", "Waugh");
+        User userOne = new User("John", "John");
+        User userTwo = new User("Alex", "kolenchiski");
+        User userThree = new User("Steve", "Waugh");
 
-        list.add(empOne);
-        list.add(empTwo);
-        list.add(empThree);
+        list.add(userOne);
+        list.add(userTwo);
+        list.add(userThree);
 
         when(dao.findAll()).thenReturn(list);
 
         //test
-        List<User> empList = service.findAll();
+        List<User> userList = service.findAll();
 
-        assertEquals(3, empList.size());
+        assertEquals(3, userList.size());
         verify(dao, times(1)).findAll();
     }
 
