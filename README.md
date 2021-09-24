@@ -21,7 +21,7 @@ Firstly, we should build '**api-gateway**' and '**user-microservice**' completel
 ```  
 $ ./build.sh   
 ```
-during compiling and packaging all integration tests and unit tests pass and then the script move all jars to _dict folder.  
+during compile and packaging all integration tests and unit tests pass and then the script move all jars to _dict folder.
 
 #### Run Server
 Run server with this script
