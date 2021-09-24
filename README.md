@@ -34,6 +34,17 @@ $ ./shutdown.sh
 You can check swagger api below link.
 ##### API url: http://localhost:8090/swagger-ui.html
 
+#### API URLs
+Create one user record
+```
+curl -X POST 'http://localhost:8080/user-api/user/create' -H 'Content-Type: application/json' --data-raw '{ "firstName":"test" }'
+```
+Read all users
+```
+curl -X GET 'http://localhost:8080/user-api/user/read' -H 'Content-Type: application/json'
+```
+
+
 ### Which technologies I used
 
 1. spring-boot
