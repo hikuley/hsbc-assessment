@@ -7,11 +7,5 @@ function exitIfNonZeroStatus() {
   fi
 }
 
-echo "api-gateway is stopping..."
-kill $(cat ./_dist/pid-api-gateway.file)
-exitIfNonZeroStatus
-
-
-echo "api-gateway is stopping..."
-kill $(cat ./_dist/pid-user-microservice.file)
-exitIfNonZeroStatus
+echo "Servers are stopping..."
+kill -9 $(cat ./_dist/pid-api-gateway.file) $(cat ./_dist/pid-user-microservice.file)
