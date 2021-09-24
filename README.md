@@ -3,12 +3,15 @@
 This project consists two part of server, first server is called '**api-gateway**', second server is called '**user-microservice**'
 
 
+**api-gateway** runs on 8080 port, **user-microservice** runs on 8090 port, and all the integration tests and unit test are ready under test package
+
+
 ### How to run Application?
 ##### Environment
 1. Java version 15
 2. Apache Maven version 3
 
-#### Run Server
+#### Build Server
 
 Set permissions to execute scripts:
 ```  
@@ -18,6 +21,8 @@ Firstly, we should build '**api-gateway**' and '**user-microservice**' completel
 ```  
 $ ./build.sh   
 ```
+
+#### Run Server
 Run server with this script
 ```  
 $ ./startup.sh
@@ -27,7 +32,7 @@ Stop server with this script
 $ ./shutdown.sh
 ```
 You can check swagger api below link.
-##### API url: http://localhost:8080/swagger-ui.html
+##### API url: http://localhost:8090/swagger-ui.html
 
 ### Which technologies I used
 
