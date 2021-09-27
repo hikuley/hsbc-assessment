@@ -1,12 +1,5 @@
 #!/bin/bash
 
-function exitIfNonZeroStatus() {
-  if [ $? -ne 0 ]; then
-    echo -e "${red}$errorMessage${noColor}"
-    exit 1
-  fi
-}
-
 echo "Servers are stopping..."
 api_gateway_pid_file="_dist/pid-api-gateway.file"
 user_micro_service_pid_file="_dist/pid-user-microservice.file"
