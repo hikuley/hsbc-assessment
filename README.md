@@ -1,4 +1,3 @@
-# hsbc-assessment
 
 This project consists two part of server, first server is called '**api-gateway**', second server is called '**user-microservice**'
 
